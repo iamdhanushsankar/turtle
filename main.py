@@ -10,7 +10,6 @@ colors = ["red", "orange", "yellow", "green", "blue", "purple"]
 y_positions = [-70, -40, -10, 20, 50, 80]
 all_turtle = []
 
-
 for turtle_index in range(0, 6):
     new_turtle = Turtle(shape="turtle")
     new_turtle.shapesize(1)
@@ -32,9 +31,7 @@ while is_race_on:
             else:
                 print("You lost!")
 
-
-        ran_distance = random.randint(0,10)
-        turtle.forward(ran_distance)
-
+        run_distance = random.randint(0, 10)
+        turtle.forward(run_distance)
 
 screen.exitonclick()
